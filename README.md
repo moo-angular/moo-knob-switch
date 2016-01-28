@@ -4,22 +4,22 @@ AngularJS Directive Component of the UI-Toolkit's Accordion for Mutual of Omaha
 ## Usage: 
 ### ES6 import syntax
 ```javascript
-import mooAngularAccordion from 'moo-angular-accordion';
-const app = angular.module('myAngularApplicationWithDependancies', ['mooAngular.input']);
+import mooKnobSwitch from 'moo-knob-switch';
+const app = angular.module('myAngularApplicationWithDependancies', ['mooAngular.knobSwitch']);
 ```
 
 ### CommonJS
 ```javascript
-var mooAngularAccordion = require('moo-angular-accordion');
-const app = angular.module('myAngularApplicationWithDependancies', ['mooAngular.input']);
+var mooKnobSwitch = require('moo-knob-switch');
+const app = angular.module('myAngularApplicationWithDependancies', ['mooAngular.knobSwitch']);
 ```
 
 ### Browser Tag's
 ```html
 <!--  Example CDN Hosting For Node Modules. Official CDN TBD -->
-<script src='//npm-cdn.herokuapp.com/moo-angular-accordion@1.1.1/dist/index.js' />
+<script src='//npm-cdn.herokuapp.com/moo-knob-switch@0.1.0/dist/index.js' />
 
 ```
 
 ##Example
-[See this codepen](http://codepen.io/TheLarkInn/pen/PPrPWP#0) to preview the implementation live. 
+[See this codepen](http://codepen.io/TheLarkInn/pen/jWxQPX) to preview the implementation live. 
