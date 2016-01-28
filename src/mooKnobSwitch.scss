@@ -1,0 +1,125 @@
+.Switch--premCycle {
+  float: right;
+  padding: 36px 0 0;
+  width: 100%;
+  max-width: 240px;
+
+  @media screen and (max-width: 766px) { /* NOTE: This should technically be 767, but because of the min-width value of 767 in the Desgin Guide, it's 766. -NE 20160108 */
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+.Switch-label {
+}
+
+.Switch--premCycle .Switch-label {
+  padding: 0 0 6px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: normal;
+  color: #a1a7ad;
+  text-align: left;
+  border-bottom: 1px solid #4e575e;
+
+  @media screen and (max-width: 766px) { /* NOTE: This should technically be 767, but because of the min-width value of 767 in the Desgin Guide, it's 766. -NE 20160108 */
+    text-align: center;
+  }
+}
+
+input.Switch-inputCheckbox--hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.Switch-input {
+  position: relative;
+  float: left;
+  padding: 12px 0 0;
+
+  @media screen and (max-width: 766px) { /* NOTE: This should technically be 767, but because of the min-width value of 767 in the Desgin Guide, it's 766. -NE 20160108 */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    // @include pie-clearfix();
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.Switch-inputLabel {
+  float: left;
+  padding: 1px 0 0;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 600;
+
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+.Switch--premCycle .Switch-inputLabel {
+  color: #a1a7ad;
+}
+
+.Switch-input.Switch-input--selectedLeft {
+  .Switch-inputLabel--left {
+    color: #fff;
+  }
+
+  .Switch-inputKnob {
+    transform: translateX(0);
+  }
+}
+.Switch-input.Switch-input--selectedRight {
+  .Switch-inputLabel--right {
+    color: #fff;
+  }
+
+  .Switch-inputKnob {
+    transform: translateX(100%);
+  }
+}
+
+.Switch-inputGutter {
+  float: left;
+  margin: 0 12px;
+  padding: 2px;
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+}
+
+.Switch--premCycle .Switch-inputGutter {
+  background-color: #272e34;
+}
+
+.Switch-inputKnob {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+
+  // transition: all .2s cubic-bezier(0.22, 0.61, 0.36, 1); Tyson liked this;
+}
+
+.Switch--premCycle .Switch-inputKnob {
+  background-color: #dde1e5;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.Switch-inputKnob.selected-right {
+  margin-left: 20px;
+  margin-left: 2rem;
+}

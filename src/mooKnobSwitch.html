@@ -1,0 +1,25 @@
+<div class="Switch Switch--premCycle">
+    <div class="Switch-label">
+        {{knobSwitchCtrl.knobLabel}}
+    </div>
+    <!-- We are hiding the checkbox input because the knob html serves as the switch itself. But we need it in the dom to drive the ng-model value --> 
+    <input 
+      type="checkbox"
+      class="Switch-inputCheckbox--hidden" 
+      ng-model="knobSwitchCtrl.ngModelValue" 
+      ng-true-value="'{{knobSwitchCtrl.inputValueLeft}}'"
+      ng-false-value="'{{knobSwitchCtrl.inputValueRight}}'"
+    />
+    <!-- We are hiding the checkbox input because the knob html serves as the switch itself. But we need it in the dom to drive the ng-model value --> 
+    <div class="Switch-input" ng-class="knobSwitchCtrl.isLeftSelected() ? 'Switch-input--selectedLeft' : 'Switch-input--selectedRight'" ng-click='knobSwitchCtrl.toggleKnobSwitchPosition()'>
+        <a class="Switch-inputLabel Switch-inputLabel--left">
+            {{knobSwitchCtrl.inputLabelLeft}}
+        </a>
+        <div class="Switch-inputGutter">
+            <a class="Switch-inputKnob"></a>
+        </div>
+        <a class="Switch-inputLabel Switch-inputLabel--right">
+            {{knobSwitchCtrl.inputLabelRight}}
+        </a>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive Viewport Used Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MooAngular Demo Page | Knob Switch</title>
+    <!-- <link rel='stylesheet' href="//cdn.mutualofomaha.com/css/corporate/3.3.2/style.css"></link> -->
+  </head>
+  <body ng-app="mooAngular.knobSwitch">
+    <script type="text/javascript" src="//use.typekit.net/kye8vcf.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="//code.angularjs.org/1.5.0-rc.2/angular.js"></script>
+    <script async src="//cdn.mutualofomaha.com/js/corporate/3.4.2/scripts.js"></script>
+    <script src="../index.js"></script>
+
+      <div ng-init='selectedEnum = "month"' class='Grid-cell u-md-size5of12 u-sm-sizeFull'>
+        <moo-knob-switch ng-model='selectedEnum'
+          knob-label='View rates'
+          input-label-left='per month'
+          input-label-right='per year'
+          input-value-left='month'
+          input-value-right='year'
+        >
+        </moo-knob-switch>
+      
+      {{selectedEnum}}
+      </div>
+  </body>
+</html>
