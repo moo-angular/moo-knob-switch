@@ -1,6 +1,6 @@
 {
   "name": "moo-knob-switch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AngularJS Knob Switch Directive Component for Mutual of Omaha's DXD Team",
   "main": "dist/index.js",
   "scripts": {

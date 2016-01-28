@@ -1,5 +1,5 @@
-# moo-angular-accordion
-AngularJS Directive Component of the UI-Toolkit's Accordion for Mutual of Omaha
+# moo-knob-switch
+AngularJS Knob Switch Directive Component for mooAngular Component Library
 
 ## Usage: 
 ### ES6 import syntax
@@ -23,3 +23,7 @@ const app = angular.module('myAngularApplicationWithDependancies', ['mooAngular.
 
 ##Example
 [See this codepen](http://codepen.io/TheLarkInn/pen/jWxQPX) to preview the implementation live. 
+
+
+
+
